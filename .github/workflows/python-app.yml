@@ -29,6 +29,8 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         sudo apt-get -y install allure
+        sudo apt-add-repository ppa:yandex-qatools/allure-framework
+        sudo apt-get update
         sudo apt-get -y install allure-commandline
     - name: Lint with flake8
       run: |
