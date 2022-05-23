@@ -25,7 +25,6 @@ jobs:
           pipenv install --deploy --system
           brew update
           brew install allure
-        working-directory: {name of your project root here}
       - name: 📂 Step 3 - Create a temp artifact folder named `output`
         run: |
           mkdir output
