@@ -21,10 +21,16 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
+    - name: Step 2 - Install Brew
+      run: |
+        git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+        mkdir ~/.linuxbrew/bin
+        ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+        eval $(~/.linuxbrew/bin/brew shellenv)
     - name: 🔗 Step 2 - Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
         pip install -r requirements.txt
-        sudo apt-get -y install allure
+        brew install allure
         echo $(allure)
