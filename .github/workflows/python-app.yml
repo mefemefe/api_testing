@@ -28,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        apt get -y install allure
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -38,5 +39,6 @@ jobs:
       run: |
         export TRELLO_APIKEY=${{secrets.TRELLO_APIKEY}}
         export TRELLO_TOKEN=${{secrets.TRELLO_TOKEN}}
-        behave tests/api/features
+        behave -f allure_behave.formatter:AllureFormatter -o reports ./tests/api/features
+        allure serve reports
         pytest
