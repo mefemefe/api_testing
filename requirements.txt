@@ -1,5 +1,0 @@
-requests
-pytest
-behave
-jsonschema
-allure-behave
