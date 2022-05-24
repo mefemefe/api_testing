@@ -1,0 +1,156 @@
+{
+  "uid" : "5434e4d6966e1589",
+  "name" : "POST an attachment to a card from an url -- @1.1 ",
+  "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
+  "historyId" : "de71df70ebeb59919c0af22fc459af11",
+  "time" : {
+    "start" : 1653351769688,
+    "stop" : 1653351770054,
+    "duration" : 366
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I created a new card",
+      "time" : {
+        "start" : 1653351769689,
+        "stop" : 1653351769854,
+        "duration" : 165
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
+      "time" : {
+        "start" : 1653351769854,
+        "stop" : 1653351769998,
+        "duration" : 144
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2f4cf648984f6e99",
+        "name" : ".table",
+        "source" : "2f4cf648984f6e99.csv",
+        "type" : "text/csv",
+        "size" : 48
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then the attachment is created on the card",
+      "time" : {
+        "start" : 1653351769998,
+        "stop" : 1653351770051,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I receive a response with the \"attachment\" schema",
+      "time" : {
+        "start" : 1653351770052,
+        "stop" : 1653351770054,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And the status code is \"200\"",
+      "time" : {
+        "start" : 1653351770054,
+        "stop" : 1653351770054,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Trello API Attachments"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Code",
+    "value" : "200"
+  }, {
+    "name" : "Cover",
+    "value" : "false"
+  }, {
+    "name" : "Name",
+    "value" : "not_a_url"
+  }, {
+    "name" : "URL",
+    "value" : "word"
+  }, {
+    "name" : "bool"
+  }, {
+    "name" : "comment",
+    "value" : "API completes it as \"http://word\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5434e4d6966e1589.json",
+  "parameterValues" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
+}

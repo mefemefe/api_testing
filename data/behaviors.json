@@ -1,0 +1,336 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Trello API Attachments",
+    "children" : [ {
+      "name" : "GET all attachments from a card",
+      "uid" : "5eae0371199b3470",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351767255,
+        "stop" : 1653351768374,
+        "duration" : 1119
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GET an attachment from a card",
+      "uid" : "b885eafd2789c93a",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351768375,
+        "stop" : 1653351769687,
+        "duration" : 1312
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "POST an attachment to a card from an url -- @1.1 ",
+      "uid" : "5434e4d6966e1589",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351769688,
+        "stop" : 1653351770054,
+        "duration" : 366
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
+    }, {
+      "name" : "POST an attachment to a card from an url -- @1.2 ",
+      "uid" : "393dfd7798a5eae8",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351770055,
+        "stop" : 1653351770674,
+        "duration" : 619
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "200", "false", "Trello logo", "https://www.svgrepo.com/show/354463/trello.svg", null, "normal image attachment" ]
+    }, {
+      "name" : "POST an attachment to a card from an url -- @1.3 ",
+      "uid" : "45fb20c9baf43866",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351770675,
+        "stop" : 1653351770891,
+        "duration" : 216
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "400", "false", "empty_url", null, "n't", "API creates nothing and returns 400" ]
+    }, {
+      "name" : "POST an attachment to a card from an url -- @1.4 ",
+      "uid" : "43584114cf6e27ee",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351770892,
+        "stop" : 1653351771305,
+        "duration" : 413
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "200", "false", "invalid", "fpt.aaa.bbb.ccc", null, "API adds \"http://\" and returns 200" ]
+    }, {
+      "name" : "POST an attachment to a card from an url -- @1.5 ",
+      "uid" : "73b45bb3e45322ad",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351771306,
+        "stop" : 1653351772497,
+        "duration" : 1191
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "200", "true", "cover", "https://source.unsplash.com/user/c_v_r", null, "cover image attachment" ]
+    }, {
+      "name" : "DELETE an attachment from a card",
+      "uid" : "878b3804dde3c4e3",
+      "parentUid" : "cee1596e8c99eb83dee3c9856b61ff6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351772498,
+        "stop" : 1653351773846,
+        "duration" : 1348
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cee1596e8c99eb83dee3c9856b61ff6c"
+  }, {
+    "name" : "Trello API Checklists",
+    "children" : [ {
+      "name" : "GET all checklists on a card",
+      "uid" : "71c0b0295b374062",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351773847,
+        "stop" : 1653351774186,
+        "duration" : 339
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GET a checklist by id",
+      "uid" : "eb91716af096beeb",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351774187,
+        "stop" : 1653351774511,
+        "duration" : 324
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "POST a new checklist to a card",
+      "uid" : "84b4680faa73593f",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351774512,
+        "stop" : 1653351774897,
+        "duration" : 385
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Update a checklist",
+      "uid" : "81d877aee7d3afa3",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351774898,
+        "stop" : 1653351775317,
+        "duration" : 419
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "DELETE a checklist",
+      "uid" : "ef4fa23aa565e3ff",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351775318,
+        "stop" : 1653351775758,
+        "duration" : 440
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GET all completed checklist items on a card",
+      "uid" : "9f4b81a380657ce2",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351775759,
+        "stop" : 1653351776196,
+        "duration" : 437
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GET all checklist items on a checklist",
+      "uid" : "800e914c2d3f980c",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351776197,
+        "stop" : 1653351776603,
+        "duration" : 406
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "POST a new checklist item to a checklist",
+      "uid" : "4730efc59133a6f4",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351776604,
+        "stop" : 1653351777070,
+        "duration" : 466
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "GET a checklist item by its id",
+      "uid" : "387ddbb6d7783078",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351777071,
+        "stop" : 1653351777484,
+        "duration" : 413
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Update a checklist item",
+      "uid" : "1ce45c4a8f09240",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351777485,
+        "stop" : 1653351778108,
+        "duration" : 623
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "DELETE a checklist item",
+      "uid" : "2424ed64beba6ef4",
+      "parentUid" : "b295bcdf441559b47e812a6a9dfd3cad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653351778109,
+        "stop" : 1653351778661,
+        "duration" : 552
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b295bcdf441559b47e812a6a9dfd3cad"
+  } ]
+}
