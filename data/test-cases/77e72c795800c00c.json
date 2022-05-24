@@ -1,12 +1,12 @@
 {
-  "uid" : "1f14153eaa40260e",
+  "uid" : "77e72c795800c00c",
   "name" : "POST an attachment to a card from an url -- @1.1 ",
   "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
   "historyId" : "de71df70ebeb59919c0af22fc459af11",
   "time" : {
-    "start" : 1653422445300,
-    "stop" : 1653422445910,
-    "duration" : 610
+    "start" : 1653422744795,
+    "stop" : 1653422745290,
+    "duration" : 495
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422445301,
-        "stop" : 1653422445520,
-        "duration" : 219
+        "start" : 1653422744795,
+        "stop" : 1653422744968,
+        "duration" : 173
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,16 +36,16 @@
     }, {
       "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
       "time" : {
-        "start" : 1653422445521,
-        "stop" : 1653422445781,
-        "duration" : 260
+        "start" : 1653422744968,
+        "stop" : 1653422745224,
+        "duration" : 256
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "7cd8f72bb97d85d",
+        "uid" : "de79f7cf65d2dbba",
         "name" : ".table",
-        "source" : "7cd8f72bb97d85d.csv",
+        "source" : "de79f7cf65d2dbba.csv",
         "type" : "text/csv",
         "size" : 48
       } ],
@@ -57,9 +57,9 @@
     }, {
       "name" : "Then the attachment is created on the card",
       "time" : {
-        "start" : 1653422445782,
-        "stop" : 1653422445906,
-        "duration" : 124
+        "start" : 1653422745224,
+        "stop" : 1653422745287,
+        "duration" : 63
       },
       "status" : "passed",
       "steps" : [ ],
@@ -72,8 +72,8 @@
     }, {
       "name" : "And I receive a response with the \"attachment\" schema",
       "time" : {
-        "start" : 1653422445907,
-        "stop" : 1653422445910,
+        "start" : 1653422745287,
+        "stop" : 1653422745290,
         "duration" : 3
       },
       "status" : "passed",
@@ -87,8 +87,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653422445910,
-        "stop" : 1653422445910,
+        "start" : 1653422745290,
+        "stop" : 1653422745290,
         "duration" : 0
       },
       "status" : "passed",
@@ -151,6 +151,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1f14153eaa40260e.json",
+  "source" : "77e72c795800c00c.json",
   "parameterValues" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
 }

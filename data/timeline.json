@@ -2,14 +2,14 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "GET an attachment from a card",
-    "uid" : "3f21c4a078679873",
+    "name" : "GET a checklist by id",
+    "uid" : "7dd8aceaf4902029",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1653422443810,
-      "stop" : 1653422445299,
-      "duration" : 1489
+      "start" : 1653422749632,
+      "stop" : 1653422749997,
+      "duration" : 365
     },
     "flaky" : false,
     "newFailed" : false,
@@ -18,202 +18,15 @@
     "retriesCount" : 0,
     "retriesStatusChange" : false,
     "parameters" : [ ]
-  }, {
-    "name" : "Update a checklist",
-    "uid" : "234b453ef2fa0a22",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422452691,
-      "stop" : 1653422453427,
-      "duration" : 736
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "GET all attachments from a card",
-    "uid" : "6392bda1b7388984",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422442175,
-      "stop" : 1653422443809,
-      "duration" : 1634
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "POST a new checklist item to a checklist",
-    "uid" : "49483d63f023d78e",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422455683,
-      "stop" : 1653422456420,
-      "duration" : 737
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "POST an attachment to a card from an url -- @1.3 ",
-    "uid" : "12937fe8f3db7523",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422446726,
-      "stop" : 1653422447108,
-      "duration" : 382
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "400", "false", "empty_url", null, "n't", "API creates nothing and returns 400" ]
   }, {
     "name" : "DELETE an attachment from a card",
-    "uid" : "1723c16111704e39",
+    "uid" : "32497112a8b9186b",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1653422449351,
-      "stop" : 1653422451022,
-      "duration" : 1671
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "DELETE a checklist item",
-    "uid" : "6e48be30b46d1838",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422458707,
-      "stop" : 1653422459600,
-      "duration" : 893
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "GET all checklist items on a checklist",
-    "uid" : "242d96e5404d349e",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422454981,
-      "stop" : 1653422455682,
-      "duration" : 701
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "POST an attachment to a card from an url -- @1.5 ",
-    "uid" : "1cbf83e1c7f69366",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422447752,
-      "stop" : 1653422449351,
-      "duration" : 1599
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "200", "true", "cover", "https://source.unsplash.com/user/c_v_r", null, "cover image attachment" ]
-  }, {
-    "name" : "POST an attachment to a card from an url -- @1.1 ",
-    "uid" : "1f14153eaa40260e",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422445300,
-      "stop" : 1653422445910,
-      "duration" : 610
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
-  }, {
-    "name" : "GET a checklist by id",
-    "uid" : "92ff2d3c50a86cc8",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422451567,
-      "stop" : 1653422452120,
-      "duration" : 553
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "DELETE a checklist",
-    "uid" : "c35f7c99810be341",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422453427,
-      "stop" : 1653422454240,
-      "duration" : 813
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "GET all completed checklist items on a card",
-    "uid" : "c68cf52614f551eb",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422454241,
-      "stop" : 1653422454970,
-      "duration" : 729
+      "start" : 1653422747830,
+      "stop" : 1653422749288,
+      "duration" : 1458
     },
     "flaky" : false,
     "newFailed" : false,
@@ -224,13 +37,132 @@
     "parameters" : [ ]
   }, {
     "name" : "Update a checklist item",
-    "uid" : "f779f4c572da7fb8",
+    "uid" : "c9486bde5ab3bb96",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1653422457268,
-      "stop" : 1653422458707,
-      "duration" : 1439
+      "start" : 1653422753226,
+      "stop" : 1653422753832,
+      "duration" : 606
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET all attachments from a card",
+    "uid" : "2ddddcf17de99e3",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422742027,
+      "stop" : 1653422743155,
+      "duration" : 1128
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE a checklist",
+    "uid" : "ad05e25aa3b5c26b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422750792,
+      "stop" : 1653422751275,
+      "duration" : 483
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE a checklist item",
+    "uid" : "c16fbcb184beaede",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422753833,
+      "stop" : 1653422754456,
+      "duration" : 623
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST an attachment to a card from an url -- @1.1 ",
+    "uid" : "77e72c795800c00c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422744795,
+      "stop" : 1653422745290,
+      "duration" : 495
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
+  }, {
+    "name" : "GET an attachment from a card",
+    "uid" : "803f3dad45974893",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422743156,
+      "stop" : 1653422744794,
+      "duration" : 1638
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Update a checklist",
+    "uid" : "bdef2ba48a2e81dc",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422750359,
+      "stop" : 1653422750792,
+      "duration" : 433
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET all completed checklist items on a card",
+    "uid" : "e4a62e953a49845d",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422751276,
+      "stop" : 1653422751712,
+      "duration" : 436
     },
     "flaky" : false,
     "newFailed" : false,
@@ -241,13 +173,13 @@
     "parameters" : [ ]
   }, {
     "name" : "GET all checklists on a card",
-    "uid" : "6248decb287dbe51",
+    "uid" : "693184ae0c9a6363",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1653422451024,
-      "stop" : 1653422451566,
-      "duration" : 542
+      "start" : 1653422749289,
+      "stop" : 1653422749632,
+      "duration" : 343
     },
     "flaky" : false,
     "newFailed" : false,
@@ -258,47 +190,13 @@
     "parameters" : [ ]
   }, {
     "name" : "GET a checklist item by its id",
-    "uid" : "4f87d10abdf1a6a8",
+    "uid" : "97e056c36dc9d14",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1653422456420,
-      "stop" : 1653422457267,
-      "duration" : 847
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "POST an attachment to a card from an url -- @1.4 ",
-    "uid" : "c97706970c387db8",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422447109,
-      "stop" : 1653422447751,
-      "duration" : 642
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "200", "false", "invalid", "fpt.aaa.bbb.ccc", null, "API adds \"http://\" and returns 200" ]
-  }, {
-    "name" : "POST a new checklist to a card",
-    "uid" : "ac53879c03c04b56",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1653422452121,
-      "stop" : 1653422452690,
-      "duration" : 569
+      "start" : 1653422752758,
+      "stop" : 1653422753224,
+      "duration" : 466
     },
     "flaky" : false,
     "newFailed" : false,
@@ -309,13 +207,13 @@
     "parameters" : [ ]
   }, {
     "name" : "POST an attachment to a card from an url -- @1.2 ",
-    "uid" : "58c0384373145fc7",
+    "uid" : "9da49f7a3054c669",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1653422445911,
-      "stop" : 1653422446726,
-      "duration" : 815
+      "start" : 1653422745291,
+      "stop" : 1653422745922,
+      "duration" : 631
     },
     "flaky" : false,
     "newFailed" : false,
@@ -324,5 +222,107 @@
     "retriesCount" : 0,
     "retriesStatusChange" : false,
     "parameters" : [ "200", "false", "Trello logo", "https://www.svgrepo.com/show/354463/trello.svg", null, "normal image attachment" ]
+  }, {
+    "name" : "POST a new checklist to a card",
+    "uid" : "d0eadb90034c0105",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422749998,
+      "stop" : 1653422750358,
+      "duration" : 360
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST a new checklist item to a checklist",
+    "uid" : "835e20c878564997",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422752220,
+      "stop" : 1653422752757,
+      "duration" : 537
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET all checklist items on a checklist",
+    "uid" : "45aba00bee01a4eb",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422751713,
+      "stop" : 1653422752219,
+      "duration" : 506
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST an attachment to a card from an url -- @1.4 ",
+    "uid" : "5c31a9a3f69516b2",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422746175,
+      "stop" : 1653422746568,
+      "duration" : 393
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "200", "false", "invalid", "fpt.aaa.bbb.ccc", null, "API adds \"http://\" and returns 200" ]
+  }, {
+    "name" : "POST an attachment to a card from an url -- @1.3 ",
+    "uid" : "9e7c0ad8e54c9195",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422745923,
+      "stop" : 1653422746175,
+      "duration" : 252
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "400", "false", "empty_url", null, "n't", "API creates nothing and returns 400" ]
+  }, {
+    "name" : "POST an attachment to a card from an url -- @1.5 ",
+    "uid" : "e5ce17850ec610f3",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653422746569,
+      "stop" : 1653422747829,
+      "duration" : 1260
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "200", "true", "cover", "https://source.unsplash.com/user/c_v_r", null, "cover image attachment" ]
   } ]
 }

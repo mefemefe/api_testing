@@ -1,12 +1,12 @@
 {
-  "uid" : "c35f7c99810be341",
-  "name" : "DELETE a checklist",
-  "fullName" : "Trello API Checklists: DELETE a checklist",
-  "historyId" : "5884e141989378bf524cd7f7a9d554c3",
+  "uid" : "7dd8aceaf4902029",
+  "name" : "GET a checklist by id",
+  "fullName" : "Trello API Checklists: GET a checklist by id",
+  "historyId" : "a485ecf9d3714e585e968a5cd4cb8a88",
   "time" : {
-    "start" : 1653422453427,
-    "stop" : 1653422454240,
-    "duration" : 813
+    "start" : 1653422749632,
+    "stop" : 1653422749997,
+    "duration" : 365
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422453428,
-        "stop" : 1653422453684,
-        "duration" : 256
+        "start" : 1653422749633,
+        "stop" : 1653422749821,
+        "duration" : 188
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,9 +36,9 @@
     }, {
       "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653422453685,
-        "stop" : 1653422453872,
-        "duration" : 187
+        "start" : 1653422749821,
+        "stop" : 1653422749938,
+        "duration" : 117
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,11 +49,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"DELETE\" request to \"/checklists/{checklist}\"",
+      "name" : "When I send a \"GET\" request to \"/checklists/{checklist}\"",
       "time" : {
-        "start" : 1653422453873,
-        "stop" : 1653422454113,
-        "duration" : 240
+        "start" : 1653422749938,
+        "stop" : 1653422749996,
+        "duration" : 58
       },
       "status" : "passed",
       "steps" : [ ],
@@ -64,11 +64,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Then the checklist is deleted",
+      "name" : "Then I receive a response with the \"checklist\" id",
       "time" : {
-        "start" : 1653422454113,
-        "stop" : 1653422454240,
-        "duration" : 127
+        "start" : 1653422749996,
+        "stop" : 1653422749996,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -81,8 +81,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653422454240,
-        "stop" : 1653422454240,
+        "start" : 1653422749997,
+        "stop" : 1653422749997,
         "duration" : 0
       },
       "status" : "passed",
@@ -128,6 +128,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c35f7c99810be341.json",
+  "source" : "7dd8aceaf4902029.json",
   "parameterValues" : [ ]
 }

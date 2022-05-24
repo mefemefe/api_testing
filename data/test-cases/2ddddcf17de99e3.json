@@ -1,12 +1,12 @@
 {
-  "uid" : "3f21c4a078679873",
-  "name" : "GET an attachment from a card",
-  "fullName" : "Trello API Attachments: GET an attachment from a card",
-  "historyId" : "111d0d88e99318359e92503e4545cadd",
+  "uid" : "2ddddcf17de99e3",
+  "name" : "GET all attachments from a card",
+  "fullName" : "Trello API Attachments: GET all attachments from a card",
+  "historyId" : "00ab6cb21b6d9e35c2561066d6de3a92",
   "time" : {
-    "start" : 1653422443810,
-    "stop" : 1653422445299,
-    "duration" : 1489
+    "start" : 1653422742027,
+    "stop" : 1653422743155,
+    "duration" : 1128
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422443812,
-        "stop" : 1653422444080,
-        "duration" : 268
+        "start" : 1653422742028,
+        "stop" : 1653422742214,
+        "duration" : 186
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,9 +36,9 @@
     }, {
       "name" : "And I created an attachment on the card",
       "time" : {
-        "start" : 1653422444080,
-        "stop" : 1653422445176,
-        "duration" : 1096
+        "start" : 1653422742214,
+        "stop" : 1653422743082,
+        "duration" : 868
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,11 +49,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"GET\" request to \"/cards/{card}/attachments/{attachment}\"",
+      "name" : "When I send a \"GET\" request to \"/cards/{card}/attachments\"",
       "time" : {
-        "start" : 1653422445176,
-        "stop" : 1653422445296,
-        "duration" : 120
+        "start" : 1653422743082,
+        "stop" : 1653422743150,
+        "duration" : 68
       },
       "status" : "passed",
       "steps" : [ ],
@@ -64,10 +64,25 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Then I receive a response with the \"attachment\" schema",
+      "name" : "Then I receive a list with at least \"1\" \"attachment\"",
       "time" : {
-        "start" : 1653422445296,
-        "stop" : 1653422445299,
+        "start" : 1653422743151,
+        "stop" : 1653422743151,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I receive a response with the \"get_attachments\" schema",
+      "time" : {
+        "start" : 1653422743151,
+        "stop" : 1653422743154,
         "duration" : 3
       },
       "status" : "passed",
@@ -81,8 +96,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653422445299,
-        "stop" : 1653422445299,
+        "start" : 1653422743155,
+        "stop" : 1653422743155,
         "duration" : 0
       },
       "status" : "passed",
@@ -96,7 +111,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 6,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -128,6 +143,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3f21c4a078679873.json",
+  "source" : "2ddddcf17de99e3.json",
   "parameterValues" : [ ]
 }
