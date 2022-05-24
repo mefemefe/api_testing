@@ -8,7 +8,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -16,12 +16,6 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: Step 2 - Install Brew
-      run: |
-        git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
-        mkdir ~/.linuxbrew/bin
-        ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
-        eval $(~/.linuxbrew/bin/brew shellenv)
     - name: 🔗 Step 2 - Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -53,8 +47,8 @@ jobs:
         path: allure-report
     - name: 💻 Step 8 - Deploy report to Github Pages
       if: always()
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-gh-pages@v3
       env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PERSONAL_TOKEN: ${{ secrets.MY_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-report
