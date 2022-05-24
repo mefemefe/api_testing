@@ -33,7 +33,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: 🌀 Step 4-B - SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
-      with:
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: 🧪 Step 5 - Run Behave with Allure folder inside `output` folder + PyTest
