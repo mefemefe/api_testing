@@ -1,12 +1,12 @@
 {
-  "uid" : "84b4680faa73593f",
-  "name" : "POST a new checklist to a card",
-  "fullName" : "Trello API Checklists: POST a new checklist to a card",
-  "historyId" : "11c3bc398529bcadd5cfcf6d8d26c9f6",
+  "uid" : "53bfa3c5fc1c67f6",
+  "name" : "DELETE an attachment from a card",
+  "fullName" : "Trello API Attachments: DELETE an attachment from a card",
+  "historyId" : "89216f9becc81f2d1fd00f39139e398e",
   "time" : {
-    "start" : 1653351774512,
-    "stop" : 1653351774897,
-    "duration" : 385
+    "start" : 1653407230775,
+    "stop" : 1653407232280,
+    "duration" : 1505
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653351774513,
-        "stop" : 1653351774694,
-        "duration" : 181
+        "start" : 1653407230775,
+        "stop" : 1653407231005,
+        "duration" : 230
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,32 +34,41 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"POST\" request to \"/checklists\"",
+      "name" : "And I created an attachment on the card",
       "time" : {
-        "start" : 1653351774694,
-        "stop" : 1653351774827,
-        "duration" : 133
+        "start" : 1653407231005,
+        "stop" : 1653407232010,
+        "duration" : 1005
       },
       "status" : "passed",
       "steps" : [ ],
-      "attachments" : [ {
-        "uid" : "bc9b0b47135106c3",
-        "name" : ".table",
-        "source" : "bc9b0b47135106c3.csv",
-        "type" : "text/csv",
-        "size" : 54
-      } ],
+      "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "attachmentsCount" : 1,
+      "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true
+      "hasContent" : false
     }, {
-      "name" : "Then the checklist is created on the card",
+      "name" : "When I send a \"DELETE\" request to \"/cards/{card}/attachments/{attachment}\"",
       "time" : {
-        "start" : 1653351774827,
-        "stop" : 1653351774896,
-        "duration" : 69
+        "start" : 1653407232010,
+        "stop" : 1653407232278,
+        "duration" : 268
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I receive a response with the \"delete\" schema",
+      "time" : {
+        "start" : 1653407232278,
+        "stop" : 1653407232280,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -72,9 +81,9 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653351774896,
-        "stop" : 1653351774897,
-        "duration" : 1
+        "start" : 1653407232280,
+        "stop" : 1653407232280,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -87,8 +96,8 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
-    "attachmentsCount" : 1,
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
@@ -98,7 +107,7 @@
     "value" : "normal"
   }, {
     "name" : "feature",
-    "value" : "Trello API Checklists"
+    "value" : "Trello API Attachments"
   }, {
     "name" : "framework",
     "value" : "behave"
@@ -119,6 +128,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "84b4680faa73593f.json",
+  "source" : "53bfa3c5fc1c67f6.json",
   "parameterValues" : [ ]
 }

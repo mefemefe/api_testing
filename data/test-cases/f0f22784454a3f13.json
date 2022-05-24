@@ -1,12 +1,12 @@
 {
-  "uid" : "878b3804dde3c4e3",
-  "name" : "DELETE an attachment from a card",
-  "fullName" : "Trello API Attachments: DELETE an attachment from a card",
-  "historyId" : "89216f9becc81f2d1fd00f39139e398e",
+  "uid" : "f0f22784454a3f13",
+  "name" : "GET all completed checklist items on a card",
+  "fullName" : "Trello API Checklists: GET all completed checklist items on a card",
+  "historyId" : "429c890144820d26f2fef0e57cfe132a",
   "time" : {
-    "start" : 1653351772498,
-    "stop" : 1653351773846,
-    "duration" : 1348
+    "start" : 1653407235412,
+    "stop" : 1653407236120,
+    "duration" : 708
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653351772499,
-        "stop" : 1653351772655,
-        "duration" : 156
+        "start" : 1653407235413,
+        "stop" : 1653407235625,
+        "duration" : 212
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,11 +34,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "And I created an attachment on the card",
+      "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653351772655,
-        "stop" : 1653351773606,
-        "duration" : 951
+        "start" : 1653407235625,
+        "stop" : 1653407235784,
+        "duration" : 159
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,11 +49,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"DELETE\" request to \"/cards/{card}/attachments/{attachment}\"",
+      "name" : "And I created a completed item on the checklist",
       "time" : {
-        "start" : 1653351773607,
-        "stop" : 1653351773844,
-        "duration" : 237
+        "start" : 1653407235785,
+        "stop" : 1653407235970,
+        "duration" : 185
       },
       "status" : "passed",
       "steps" : [ ],
@@ -64,11 +64,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Then I receive a response with the \"delete\" schema",
+      "name" : "When I send a \"GET\" request to \"/cards/{card}/checkItemStates\"",
       "time" : {
-        "start" : 1653351773844,
-        "stop" : 1653351773845,
-        "duration" : 1
+        "start" : 1653407235971,
+        "stop" : 1653407236119,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I receive a list with at least \"1\" \"checklist item\"",
+      "time" : {
+        "start" : 1653407236120,
+        "stop" : 1653407236120,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -81,9 +96,9 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653351773845,
-        "stop" : 1653351773846,
-        "duration" : 1
+        "start" : 1653407236120,
+        "stop" : 1653407236120,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -96,7 +111,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 6,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -107,7 +122,7 @@
     "value" : "normal"
   }, {
     "name" : "feature",
-    "value" : "Trello API Attachments"
+    "value" : "Trello API Checklists"
   }, {
     "name" : "framework",
     "value" : "behave"
@@ -128,6 +143,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "878b3804dde3c4e3.json",
+  "source" : "f0f22784454a3f13.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "5434e4d6966e1589",
-  "name" : "POST an attachment to a card from an url -- @1.1 ",
-  "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
-  "historyId" : "de71df70ebeb59919c0af22fc459af11",
+  "uid" : "435942737d5aa86f",
+  "name" : "Update a checklist",
+  "fullName" : "Trello API Checklists: Update a checklist",
+  "historyId" : "991a86e7f7a3047221c92beb4d7084c3",
   "time" : {
-    "start" : 1653351769688,
-    "stop" : 1653351770054,
-    "duration" : 366
+    "start" : 1653407233783,
+    "stop" : 1653407234672,
+    "duration" : 889
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653351769689,
-        "stop" : 1653351769854,
-        "duration" : 165
+        "start" : 1653407233784,
+        "stop" : 1653407234005,
+        "duration" : 221
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,20 +34,35 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
+      "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653351769854,
-        "stop" : 1653351769998,
-        "duration" : 144
+        "start" : 1653407234005,
+        "stop" : 1653407234177,
+        "duration" : 172
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I send a \"PUT\" request to \"/checklists/{checklist}\"",
+      "time" : {
+        "start" : 1653407234177,
+        "stop" : 1653407234338,
+        "duration" : 161
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "2f4cf648984f6e99",
+        "uid" : "bd97bdbfd20cd22e",
         "name" : ".table",
-        "source" : "2f4cf648984f6e99.csv",
+        "source" : "bd97bdbfd20cd22e.csv",
         "type" : "text/csv",
-        "size" : 48
+        "size" : 37
       } ],
       "parameters" : [ ],
       "stepsCount" : 0,
@@ -55,26 +70,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Then the attachment is created on the card",
+      "name" : "Then the checklist is updated",
       "time" : {
-        "start" : 1653351769998,
-        "stop" : 1653351770051,
-        "duration" : 53
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "And I receive a response with the \"attachment\" schema",
-      "time" : {
-        "start" : 1653351770052,
-        "stop" : 1653351770054,
-        "duration" : 2
+        "start" : 1653407234339,
+        "stop" : 1653407234671,
+        "duration" : 332
       },
       "status" : "passed",
       "steps" : [ ],
@@ -87,8 +87,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653351770054,
-        "stop" : 1653351770054,
+        "start" : 1653407234671,
+        "stop" : 1653407234671,
         "duration" : 0
       },
       "status" : "passed",
@@ -113,7 +113,7 @@
     "value" : "normal"
   }, {
     "name" : "feature",
-    "value" : "Trello API Attachments"
+    "value" : "Trello API Checklists"
   }, {
     "name" : "framework",
     "value" : "behave"
@@ -124,24 +124,7 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ {
-    "name" : "Code",
-    "value" : "200"
-  }, {
-    "name" : "Cover",
-    "value" : "false"
-  }, {
-    "name" : "Name",
-    "value" : "not_a_url"
-  }, {
-    "name" : "URL",
-    "value" : "word"
-  }, {
-    "name" : "bool"
-  }, {
-    "name" : "comment",
-    "value" : "API completes it as \"http://word\""
-  } ],
+  "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -151,6 +134,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5434e4d6966e1589.json",
-  "parameterValues" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
+  "source" : "435942737d5aa86f.json",
+  "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "eb91716af096beeb",
-  "name" : "GET a checklist by id",
-  "fullName" : "Trello API Checklists: GET a checklist by id",
-  "historyId" : "a485ecf9d3714e585e968a5cd4cb8a88",
+  "uid" : "37ed59f905074aea",
+  "name" : "Update a checklist item",
+  "fullName" : "Trello API Checklists: Update a checklist item",
+  "historyId" : "e95913cdc25cc471e748ad39728b5d68",
   "time" : {
-    "start" : 1653351774187,
-    "stop" : 1653351774511,
-    "duration" : 324
+    "start" : 1653407238092,
+    "stop" : 1653407239032,
+    "duration" : 940
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653351774187,
-        "stop" : 1653351774327,
-        "duration" : 140
+        "start" : 1653407238092,
+        "stop" : 1653407238364,
+        "duration" : 272
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,39 +36,60 @@
     }, {
       "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653351774327,
-        "stop" : 1653351774435,
+        "start" : 1653407238365,
+        "stop" : 1653407238533,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I created a completed item on the checklist",
+      "time" : {
+        "start" : 1653407238534,
+        "stop" : 1653407238716,
+        "duration" : 182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I send a \"PUT\" request to \"/cards/{card}/checkItem/{checkitem}\"",
+      "time" : {
+        "start" : 1653407238716,
+        "stop" : 1653407238923,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e145fc86b0976a47",
+        "name" : ".table",
+        "source" : "e145fc86b0976a47.csv",
+        "type" : "text/csv",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then the checklist item is updated",
+      "time" : {
+        "start" : 1653407238923,
+        "stop" : 1653407239031,
         "duration" : 108
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "When I send a \"GET\" request to \"/checklists/{checklist}\"",
-      "time" : {
-        "start" : 1653351774435,
-        "stop" : 1653351774510,
-        "duration" : 75
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Then I receive a response with the \"checklist\" id",
-      "time" : {
-        "start" : 1653351774510,
-        "stop" : 1653351774511,
-        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -81,9 +102,9 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653351774511,
-        "stop" : 1653351774511,
-        "duration" : 0
+        "start" : 1653407239031,
+        "stop" : 1653407239032,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -96,8 +117,8 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
-    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
@@ -128,6 +149,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "eb91716af096beeb.json",
+  "source" : "37ed59f905074aea.json",
   "parameterValues" : [ ]
 }
