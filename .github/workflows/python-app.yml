@@ -57,4 +57,4 @@ jobs:
       env:
         PERSONAL_TOKEN: ${{ secrets.MY_TOKEN }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-report/allure-report
+        PUBLISH_DIR: allure-report
