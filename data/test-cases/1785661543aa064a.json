@@ -1,0 +1,156 @@
+{
+  "uid" : "1785661543aa064a",
+  "name" : "POST an attachment to a card from an url -- @1.4 ",
+  "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
+  "historyId" : "aa90457ba705d067d99f992d752918da",
+  "time" : {
+    "start" : 1653419817311,
+    "stop" : 1653419817932,
+    "duration" : 621
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I created a new card",
+      "time" : {
+        "start" : 1653419817311,
+        "stop" : 1653419817526,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
+      "time" : {
+        "start" : 1653419817526,
+        "stop" : 1653419817811,
+        "duration" : 285
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d5c8d4b606afeb2a",
+        "name" : ".table",
+        "source" : "d5c8d4b606afeb2a.csv",
+        "type" : "text/csv",
+        "size" : 57
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then the attachment is created on the card",
+      "time" : {
+        "start" : 1653419817812,
+        "stop" : 1653419817929,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I receive a response with the \"attachment\" schema",
+      "time" : {
+        "start" : 1653419817929,
+        "stop" : 1653419817931,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And the status code is \"200\"",
+      "time" : {
+        "start" : 1653419817931,
+        "stop" : 1653419817932,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Trello API Attachments"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Code",
+    "value" : "200"
+  }, {
+    "name" : "Cover",
+    "value" : "false"
+  }, {
+    "name" : "Name",
+    "value" : "invalid"
+  }, {
+    "name" : "URL",
+    "value" : "fpt.aaa.bbb.ccc"
+  }, {
+    "name" : "bool"
+  }, {
+    "name" : "comment",
+    "value" : "API adds \"http://\" and returns 200"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1785661543aa064a.json",
+  "parameterValues" : [ "200", "false", "invalid", "fpt.aaa.bbb.ccc", null, "API adds \"http://\" and returns 200" ]
+}

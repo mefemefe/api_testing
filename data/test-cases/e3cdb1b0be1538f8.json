@@ -1,0 +1,156 @@
+{
+  "uid" : "e3cdb1b0be1538f8",
+  "name" : "POST an attachment to a card from an url -- @1.2 ",
+  "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
+  "historyId" : "e777478627c266c150ff3dbadb6646b4",
+  "time" : {
+    "start" : 1653419815883,
+    "stop" : 1653419816882,
+    "duration" : 999
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I created a new card",
+      "time" : {
+        "start" : 1653419815884,
+        "stop" : 1653419816130,
+        "duration" : 246
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
+      "time" : {
+        "start" : 1653419816130,
+        "stop" : 1653419816753,
+        "duration" : 623
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6e526955669d7cae",
+        "name" : ".table",
+        "source" : "6e526955669d7cae.csv",
+        "type" : "text/csv",
+        "size" : 92
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then the attachment is created on the card",
+      "time" : {
+        "start" : 1653419816753,
+        "stop" : 1653419816879,
+        "duration" : 126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I receive a response with the \"attachment\" schema",
+      "time" : {
+        "start" : 1653419816879,
+        "stop" : 1653419816881,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And the status code is \"200\"",
+      "time" : {
+        "start" : 1653419816881,
+        "stop" : 1653419816881,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Trello API Attachments"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Code",
+    "value" : "200"
+  }, {
+    "name" : "Cover",
+    "value" : "false"
+  }, {
+    "name" : "Name",
+    "value" : "Trello logo"
+  }, {
+    "name" : "URL",
+    "value" : "https://www.svgrepo.com/show/354463/trello.svg"
+  }, {
+    "name" : "bool"
+  }, {
+    "name" : "comment",
+    "value" : "normal image attachment"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e3cdb1b0be1538f8.json",
+  "parameterValues" : [ "200", "false", "Trello logo", "https://www.svgrepo.com/show/354463/trello.svg", null, "normal image attachment" ]
+}
