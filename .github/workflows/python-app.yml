@@ -40,12 +40,7 @@ jobs:
     - name: 📊 Step 6 - Collect Allure files and generate allure-report folder
       run: |
         allure generate output/
-    - name: 🎁 Step 7 - Publishing Allure artifact to GitHub Actions
-      uses: actions/upload-artifact@v2
-      with:
-        name: allure-report
-        path: allure-report
-    - name: 💻 Step 8 - Deploy report to Github Pages
+    - name: 💻 Step 7 - Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
