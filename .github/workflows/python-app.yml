@@ -25,12 +25,17 @@ jobs:
     - name: 📂 Step 3 - Create a temp artifact folder named `output`
       run: |
         mkdir output
-    - name: ❄️ Step 4 - Lint with flake8
+    - name: ❄️ Step 4-A - Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: 🌀 Step 4-B - SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: 🧪 Step 5 - Run Behave with Allure folder inside `output` folder + PyTest
       run: |
         export TRELLO_APIKEY=${{secrets.TRELLO_APIKEY}}
