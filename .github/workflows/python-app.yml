@@ -6,8 +6,22 @@ permissions:
   contents: read
 
 jobs:
+  lint:
+    name: SonarCloud
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: 🌀 Step 1 - SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  
   build:
-
+    name: Build & Test
     runs-on: macos-latest
 
     steps:
@@ -25,7 +39,7 @@ jobs:
     - name: 📂 Step 3 - Create a temp artifact folder named `output`
       run: |
         mkdir output
-    - name: ❄️ Step 4-A - Lint with flake8
+    - name: ❄️ Step 4 - Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
