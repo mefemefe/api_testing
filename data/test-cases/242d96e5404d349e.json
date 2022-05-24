@@ -1,12 +1,12 @@
 {
-  "uid" : "dac02e7c62d30a28",
-  "name" : "GET a checklist by id",
-  "fullName" : "Trello API Checklists: GET a checklist by id",
-  "historyId" : "a485ecf9d3714e585e968a5cd4cb8a88",
+  "uid" : "242d96e5404d349e",
+  "name" : "GET all checklist items on a checklist",
+  "fullName" : "Trello API Checklists: GET all checklist items on a checklist",
+  "historyId" : "71e3de20ab42c8b7e61390669779ddfe",
   "time" : {
-    "start" : 1653419821804,
-    "stop" : 1653419822347,
-    "duration" : 543
+    "start" : 1653422454981,
+    "stop" : 1653422455682,
+    "duration" : 701
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653419821805,
-        "stop" : 1653419822040,
-        "duration" : 235
+        "start" : 1653422454982,
+        "stop" : 1653422455193,
+        "duration" : 211
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,9 +36,9 @@
     }, {
       "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653419822040,
-        "stop" : 1653419822212,
-        "duration" : 172
+        "start" : 1653422455193,
+        "stop" : 1653422455371,
+        "duration" : 178
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,10 +49,25 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"GET\" request to \"/checklists/{checklist}\"",
+      "name" : "And I created a completed item on the checklist",
       "time" : {
-        "start" : 1653419822213,
-        "stop" : 1653419822346,
+        "start" : 1653422455371,
+        "stop" : 1653422455547,
+        "duration" : 176
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I send a \"GET\" request to \"/checklists/{checklist}/checkItems\"",
+      "time" : {
+        "start" : 1653422455548,
+        "stop" : 1653422455681,
         "duration" : 133
       },
       "status" : "passed",
@@ -64,10 +79,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Then I receive a response with the \"checklist\" id",
+      "name" : "Then I receive a list with at least \"1\" \"checklist item\"",
       "time" : {
-        "start" : 1653419822346,
-        "stop" : 1653419822346,
+        "start" : 1653422455681,
+        "stop" : 1653422455681,
         "duration" : 0
       },
       "status" : "passed",
@@ -81,8 +96,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653419822346,
-        "stop" : 1653419822347,
+        "start" : 1653422455681,
+        "stop" : 1653422455682,
         "duration" : 1
       },
       "status" : "passed",
@@ -96,7 +111,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 6,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -128,6 +143,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "dac02e7c62d30a28.json",
+  "source" : "242d96e5404d349e.json",
   "parameterValues" : [ ]
 }

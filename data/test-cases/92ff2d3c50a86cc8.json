@@ -1,12 +1,12 @@
 {
-  "uid" : "2e88de1b017f8b4c",
-  "name" : "POST an attachment to a card from an url -- @1.5 ",
-  "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
-  "historyId" : "9721fa66c7eecf3a058640a12705bbe4",
+  "uid" : "92ff2d3c50a86cc8",
+  "name" : "GET a checklist by id",
+  "fullName" : "Trello API Checklists: GET a checklist by id",
+  "historyId" : "a485ecf9d3714e585e968a5cd4cb8a88",
   "time" : {
-    "start" : 1653419817933,
-    "stop" : 1653419819281,
-    "duration" : 1348
+    "start" : 1653422451567,
+    "stop" : 1653422452120,
+    "duration" : 553
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,8 +21,8 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653419817934,
-        "stop" : 1653419818161,
+        "start" : 1653422451567,
+        "stop" : 1653422451794,
         "duration" : 227
       },
       "status" : "passed",
@@ -34,32 +34,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
+      "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653419818161,
-        "stop" : 1653419819144,
-        "duration" : 983
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ {
-        "uid" : "7303cd183d812365",
-        "name" : ".table",
-        "source" : "7303cd183d812365.csv",
-        "type" : "text/csv",
-        "size" : 77
-      } ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 1,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true
-    }, {
-      "name" : "Then the attachment is created on the card",
-      "time" : {
-        "start" : 1653419819145,
-        "stop" : 1653419819277,
-        "duration" : 132
+        "start" : 1653422451794,
+        "stop" : 1653422451985,
+        "duration" : 191
       },
       "status" : "passed",
       "steps" : [ ],
@@ -70,11 +49,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "And I receive a response with the \"attachment\" schema",
+      "name" : "When I send a \"GET\" request to \"/checklists/{checklist}\"",
       "time" : {
-        "start" : 1653419819278,
-        "stop" : 1653419819280,
-        "duration" : 2
+        "start" : 1653422451985,
+        "stop" : 1653422452118,
+        "duration" : 133
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I receive a response with the \"checklist\" id",
+      "time" : {
+        "start" : 1653422452119,
+        "stop" : 1653422452119,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -87,8 +81,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653419819280,
-        "stop" : 1653419819280,
+        "start" : 1653422452119,
+        "stop" : 1653422452119,
         "duration" : 0
       },
       "status" : "passed",
@@ -103,7 +97,7 @@
     "attachments" : [ ],
     "parameters" : [ ],
     "stepsCount" : 5,
-    "attachmentsCount" : 1,
+    "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
@@ -113,7 +107,7 @@
     "value" : "normal"
   }, {
     "name" : "feature",
-    "value" : "Trello API Attachments"
+    "value" : "Trello API Checklists"
   }, {
     "name" : "framework",
     "value" : "behave"
@@ -124,24 +118,7 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ {
-    "name" : "Code",
-    "value" : "200"
-  }, {
-    "name" : "Cover",
-    "value" : "true"
-  }, {
-    "name" : "Name",
-    "value" : "cover"
-  }, {
-    "name" : "URL",
-    "value" : "https://source.unsplash.com/user/c_v_r"
-  }, {
-    "name" : "bool"
-  }, {
-    "name" : "comment",
-    "value" : "cover image attachment"
-  } ],
+  "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -151,6 +128,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2e88de1b017f8b4c.json",
-  "parameterValues" : [ "200", "true", "cover", "https://source.unsplash.com/user/c_v_r", null, "cover image attachment" ]
+  "source" : "92ff2d3c50a86cc8.json",
+  "parameterValues" : [ ]
 }

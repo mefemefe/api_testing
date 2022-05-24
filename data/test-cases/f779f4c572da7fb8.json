@@ -1,12 +1,12 @@
 {
-  "uid" : "bdd120235889d3e7",
+  "uid" : "f779f4c572da7fb8",
   "name" : "Update a checklist item",
   "fullName" : "Trello API Checklists: Update a checklist item",
   "historyId" : "e95913cdc25cc471e748ad39728b5d68",
   "time" : {
-    "start" : 1653419827419,
-    "stop" : 1653419828385,
-    "duration" : 966
+    "start" : 1653422457268,
+    "stop" : 1653422458707,
+    "duration" : 1439
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653419827419,
-        "stop" : 1653419827644,
-        "duration" : 225
+        "start" : 1653422457269,
+        "stop" : 1653422457492,
+        "duration" : 223
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,9 +36,9 @@
     }, {
       "name" : "And I created a checklist on the card",
       "time" : {
-        "start" : 1653419827644,
-        "stop" : 1653419827835,
-        "duration" : 191
+        "start" : 1653422457492,
+        "stop" : 1653422457707,
+        "duration" : 215
       },
       "status" : "passed",
       "steps" : [ ],
@@ -51,9 +51,9 @@
     }, {
       "name" : "And I created a completed item on the checklist",
       "time" : {
-        "start" : 1653419827835,
-        "stop" : 1653419828003,
-        "duration" : 168
+        "start" : 1653422457708,
+        "stop" : 1653422458352,
+        "duration" : 644
       },
       "status" : "passed",
       "steps" : [ ],
@@ -66,16 +66,16 @@
     }, {
       "name" : "When I send a \"PUT\" request to \"/cards/{card}/checkItem/{checkitem}\"",
       "time" : {
-        "start" : 1653419828003,
-        "stop" : 1653419828253,
-        "duration" : 250
+        "start" : 1653422458353,
+        "stop" : 1653422458576,
+        "duration" : 223
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "da0b1718fe383e9e",
+        "uid" : "281d64f12b4e0efd",
         "name" : ".table",
-        "source" : "da0b1718fe383e9e.csv",
+        "source" : "281d64f12b4e0efd.csv",
         "type" : "text/csv",
         "size" : 47
       } ],
@@ -87,9 +87,9 @@
     }, {
       "name" : "Then the checklist item is updated",
       "time" : {
-        "start" : 1653419828253,
-        "stop" : 1653419828384,
-        "duration" : 131
+        "start" : 1653422458576,
+        "stop" : 1653422458706,
+        "duration" : 130
       },
       "status" : "passed",
       "steps" : [ ],
@@ -102,9 +102,9 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653419828385,
-        "stop" : 1653419828385,
-        "duration" : 0
+        "start" : 1653422458706,
+        "stop" : 1653422458707,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -149,6 +149,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "bdd120235889d3e7.json",
+  "source" : "f779f4c572da7fb8.json",
   "parameterValues" : [ ]
 }
