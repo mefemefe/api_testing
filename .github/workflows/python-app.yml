@@ -1,12 +1,7 @@
 
 name: Trello API Testing Framework
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+on: workflow_dispatch
 permissions:
   contents: read
 
