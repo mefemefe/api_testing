@@ -1,61 +1,61 @@
 
-name: Trello API Testing Framework
+name: Push-to-master workflow
 
-on: workflow_dispatch
+on: 
+  pull_request:
+    branches:
+      - master
 permissions:
   contents: read
 
 jobs:
   lint:
-    name: SonarCloud
+    name: Lint
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: 🌀 Step 1 - SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    - uses: actions/checkout@v3
+    - name: 🐍 Step 0 - Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: 💾 Step 1 - Install flake8
+      run: |
+        pip install flake8
+    - name: ❄️ Step 2 - Lint with flake8
+      run: |
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
+  
   
   build:
-    needs: lint
     name: Build & Test
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
-    - name: 🐍 Step 1 - Set up Python 3.10
+    - name: 🐍 Step 0 - Set up Python 3.10
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: 🔗 Step 2 - Install dependencies
+    - name: 🔗 Step 1 - Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
         pip install -r requirements.txt
         brew install allure
-    - name: 📂 Step 3 - Create a temp artifact folder named `output`
+    - name: 📂 Step 2 - Create a temp artifact folder named `output`
       run: |
         mkdir output
-    - name: ❄️ Step 4 - Lint with flake8
-      run: |
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: 🧪 Step 5 - Run Behave with Allure folder inside `output` folder + PyTest
+    - name: 🧪 Step 3 - Run Behave with Allure folder inside `output` folder + PyTest
       run: |
         export TRELLO_APIKEY=${{secrets.TRELLO_APIKEY}}
         export TRELLO_TOKEN=${{secrets.TRELLO_TOKEN}}
         behave -f allure_behave.formatter:AllureFormatter -o output ./tests/api/features
         pytest
-    - name: 📊 Step 6 - Collect Allure files and generate allure-report folder
+    - name: 📊 Step 4 - Collect Allure files and generate allure-report folder
       run: |
         allure generate output/
-    - name: 💻 Step 7 - Deploy report to Github Pages
+    - name: 💻 Step 5 - Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
