@@ -1,12 +1,12 @@
 {
-  "uid" : "d0eadb90034c0105",
-  "name" : "POST a new checklist to a card",
-  "fullName" : "Trello API Checklists: POST a new checklist to a card",
-  "historyId" : "11c3bc398529bcadd5cfcf6d8d26c9f6",
+  "uid" : "37172d01639966d6",
+  "name" : "POST an attachment to a card from an url -- @1.2 ",
+  "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
+  "historyId" : "e777478627c266c150ff3dbadb6646b4",
   "time" : {
-    "start" : 1653422749998,
-    "stop" : 1653422750358,
-    "duration" : 360
+    "start" : 1653660109715,
+    "stop" : 1653660110512,
+    "duration" : 797
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422749998,
-        "stop" : 1653422750164,
-        "duration" : 166
+        "start" : 1653660109716,
+        "stop" : 1653660109894,
+        "duration" : 178
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,20 +34,20 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "When I send a \"POST\" request to \"/checklists\"",
+      "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
       "time" : {
-        "start" : 1653422750164,
-        "stop" : 1653422750293,
-        "duration" : 129
+        "start" : 1653660109895,
+        "stop" : 1653660110363,
+        "duration" : 468
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "884121586fe1a0f8",
+        "uid" : "8bed6fb125c0b7a",
         "name" : ".table",
-        "source" : "884121586fe1a0f8.csv",
+        "source" : "8bed6fb125c0b7a.csv",
         "type" : "text/csv",
-        "size" : 54
+        "size" : 92
       } ],
       "parameters" : [ ],
       "stepsCount" : 0,
@@ -55,11 +55,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Then the checklist is created on the card",
+      "name" : "Then the attachment is created on the card",
       "time" : {
-        "start" : 1653422750293,
-        "stop" : 1653422750358,
-        "duration" : 65
+        "start" : 1653660110363,
+        "stop" : 1653660110509,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I receive a response with the \"attachment\" schema",
+      "time" : {
+        "start" : 1653660110509,
+        "stop" : 1653660110511,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -72,8 +87,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653422750358,
-        "stop" : 1653422750358,
+        "start" : 1653660110512,
+        "stop" : 1653660110512,
         "duration" : 0
       },
       "status" : "passed",
@@ -87,7 +102,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 5,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -98,7 +113,7 @@
     "value" : "normal"
   }, {
     "name" : "feature",
-    "value" : "Trello API Checklists"
+    "value" : "Trello API Attachments"
   }, {
     "name" : "framework",
     "value" : "behave"
@@ -109,7 +124,24 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ ],
+  "parameters" : [ {
+    "name" : "Code",
+    "value" : "200"
+  }, {
+    "name" : "Cover",
+    "value" : "false"
+  }, {
+    "name" : "Name",
+    "value" : "Trello logo"
+  }, {
+    "name" : "URL",
+    "value" : "https://www.svgrepo.com/show/354463/trello.svg"
+  }, {
+    "name" : "bool"
+  }, {
+    "name" : "comment",
+    "value" : "normal image attachment"
+  } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -119,6 +151,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d0eadb90034c0105.json",
-  "parameterValues" : [ ]
+  "source" : "37172d01639966d6.json",
+  "parameterValues" : [ "200", "false", "Trello logo", "https://www.svgrepo.com/show/354463/trello.svg", null, "normal image attachment" ]
 }

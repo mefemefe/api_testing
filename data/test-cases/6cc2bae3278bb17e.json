@@ -1,12 +1,12 @@
 {
-  "uid" : "c9486bde5ab3bb96",
-  "name" : "Update a checklist item",
-  "fullName" : "Trello API Checklists: Update a checklist item",
-  "historyId" : "e95913cdc25cc471e748ad39728b5d68",
+  "uid" : "6cc2bae3278bb17e",
+  "name" : "POST a new checklist to a card",
+  "fullName" : "Trello API Checklists: POST a new checklist to a card",
+  "historyId" : "11c3bc398529bcadd5cfcf6d8d26c9f6",
   "time" : {
-    "start" : 1653422753226,
-    "stop" : 1653422753832,
-    "duration" : 606
+    "start" : 1653660115213,
+    "stop" : 1653660115589,
+    "duration" : 376
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422753227,
-        "stop" : 1653422753392,
-        "duration" : 165
+        "start" : 1653660115214,
+        "stop" : 1653660115384,
+        "duration" : 170
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,50 +34,20 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "And I created a checklist on the card",
+      "name" : "When I send a \"POST\" request to \"/checklists\"",
       "time" : {
-        "start" : 1653422753392,
-        "stop" : 1653422753505,
-        "duration" : 113
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "And I created a completed item on the checklist",
-      "time" : {
-        "start" : 1653422753505,
-        "stop" : 1653422753619,
-        "duration" : 114
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "When I send a \"PUT\" request to \"/cards/{card}/checkItem/{checkitem}\"",
-      "time" : {
-        "start" : 1653422753619,
-        "stop" : 1653422753767,
-        "duration" : 148
+        "start" : 1653660115385,
+        "stop" : 1653660115506,
+        "duration" : 121
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "7ad442fde9e096e5",
+        "uid" : "62d73a542cb09036",
         "name" : ".table",
-        "source" : "7ad442fde9e096e5.csv",
+        "source" : "62d73a542cb09036.csv",
         "type" : "text/csv",
-        "size" : 47
+        "size" : 54
       } ],
       "parameters" : [ ],
       "stepsCount" : 0,
@@ -85,11 +55,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Then the checklist item is updated",
+      "name" : "Then the checklist is created on the card",
       "time" : {
-        "start" : 1653422753767,
-        "stop" : 1653422753831,
-        "duration" : 64
+        "start" : 1653660115506,
+        "stop" : 1653660115588,
+        "duration" : 82
       },
       "status" : "passed",
       "steps" : [ ],
@@ -102,8 +72,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653422753832,
-        "stop" : 1653422753832,
+        "start" : 1653660115588,
+        "stop" : 1653660115588,
         "duration" : 0
       },
       "status" : "passed",
@@ -117,7 +87,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 6,
+    "stepsCount" : 4,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -149,6 +119,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c9486bde5ab3bb96.json",
+  "source" : "6cc2bae3278bb17e.json",
   "parameterValues" : [ ]
 }

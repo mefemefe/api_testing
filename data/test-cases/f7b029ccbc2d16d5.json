@@ -1,12 +1,12 @@
 {
-  "uid" : "9e7c0ad8e54c9195",
+  "uid" : "f7b029ccbc2d16d5",
   "name" : "POST an attachment to a card from an url -- @1.3 ",
   "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
   "historyId" : "27563e88174fe59c7cf1a7261a114eda",
   "time" : {
-    "start" : 1653422745923,
-    "stop" : 1653422746175,
-    "duration" : 252
+    "start" : 1653660110513,
+    "stop" : 1653660110803,
+    "duration" : 290
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422745923,
-        "stop" : 1653422746101,
-        "duration" : 178
+        "start" : 1653660110514,
+        "stop" : 1653660110706,
+        "duration" : 192
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,16 +36,16 @@
     }, {
       "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
       "time" : {
-        "start" : 1653422746102,
-        "stop" : 1653422746172,
-        "duration" : 70
+        "start" : 1653660110707,
+        "stop" : 1653660110800,
+        "duration" : 93
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "585c10e1c50e0980",
+        "uid" : "898cdec4b6c51f92",
         "name" : ".table",
-        "source" : "585c10e1c50e0980.csv",
+        "source" : "898cdec4b6c51f92.csv",
         "type" : "text/csv",
         "size" : 44
       } ],
@@ -57,8 +57,8 @@
     }, {
       "name" : "Then the attachment isn't created on the card",
       "time" : {
-        "start" : 1653422746172,
-        "stop" : 1653422746172,
+        "start" : 1653660110800,
+        "stop" : 1653660110800,
         "duration" : 0
       },
       "status" : "passed",
@@ -72,9 +72,9 @@
     }, {
       "name" : "And I receive a response with the \"attachment\" schema",
       "time" : {
-        "start" : 1653422746172,
-        "stop" : 1653422746174,
-        "duration" : 2
+        "start" : 1653660110800,
+        "stop" : 1653660110803,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -87,9 +87,9 @@
     }, {
       "name" : "And the status code is \"400\"",
       "time" : {
-        "start" : 1653422746174,
-        "stop" : 1653422746175,
-        "duration" : 1
+        "start" : 1653660110803,
+        "stop" : 1653660110803,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -151,6 +151,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9e7c0ad8e54c9195.json",
+  "source" : "f7b029ccbc2d16d5.json",
   "parameterValues" : [ "400", "false", "empty_url", null, "n't", "API creates nothing and returns 400" ]
 }

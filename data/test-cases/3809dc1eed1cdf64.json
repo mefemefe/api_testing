@@ -1,12 +1,12 @@
 {
-  "uid" : "5c31a9a3f69516b2",
-  "name" : "POST an attachment to a card from an url -- @1.4 ",
+  "uid" : "3809dc1eed1cdf64",
+  "name" : "POST an attachment to a card from an url -- @1.1 ",
   "fullName" : "Trello API Attachments: POST an attachment to a card from an url",
-  "historyId" : "aa90457ba705d067d99f992d752918da",
+  "historyId" : "de71df70ebeb59919c0af22fc459af11",
   "time" : {
-    "start" : 1653422746175,
-    "stop" : 1653422746568,
-    "duration" : 393
+    "start" : 1653660109252,
+    "stop" : 1653660109714,
+    "duration" : 462
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,9 +21,9 @@
     "steps" : [ {
       "name" : "Given I created a new card",
       "time" : {
-        "start" : 1653422746176,
-        "stop" : 1653422746336,
-        "duration" : 160
+        "start" : 1653660109253,
+        "stop" : 1653660109497,
+        "duration" : 244
       },
       "status" : "passed",
       "steps" : [ ],
@@ -36,18 +36,18 @@
     }, {
       "name" : "When I send a \"POST\" request to \"/cards/{card}/attachments\"",
       "time" : {
-        "start" : 1653422746337,
-        "stop" : 1653422746509,
-        "duration" : 172
+        "start" : 1653660109497,
+        "stop" : 1653660109652,
+        "duration" : 155
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "1a2a183da9189ec7",
+        "uid" : "8120d527888b50af",
         "name" : ".table",
-        "source" : "1a2a183da9189ec7.csv",
+        "source" : "8120d527888b50af.csv",
         "type" : "text/csv",
-        "size" : 57
+        "size" : 48
       } ],
       "parameters" : [ ],
       "stepsCount" : 0,
@@ -57,9 +57,9 @@
     }, {
       "name" : "Then the attachment is created on the card",
       "time" : {
-        "start" : 1653422746509,
-        "stop" : 1653422746565,
-        "duration" : 56
+        "start" : 1653660109652,
+        "stop" : 1653660109711,
+        "duration" : 59
       },
       "status" : "passed",
       "steps" : [ ],
@@ -72,9 +72,9 @@
     }, {
       "name" : "And I receive a response with the \"attachment\" schema",
       "time" : {
-        "start" : 1653422746565,
-        "stop" : 1653422746567,
-        "duration" : 2
+        "start" : 1653660109711,
+        "stop" : 1653660109714,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -87,8 +87,8 @@
     }, {
       "name" : "And the status code is \"200\"",
       "time" : {
-        "start" : 1653422746568,
-        "stop" : 1653422746568,
+        "start" : 1653660109714,
+        "stop" : 1653660109714,
         "duration" : 0
       },
       "status" : "passed",
@@ -132,15 +132,15 @@
     "value" : "false"
   }, {
     "name" : "Name",
-    "value" : "invalid"
+    "value" : "not_a_url"
   }, {
     "name" : "URL",
-    "value" : "fpt.aaa.bbb.ccc"
+    "value" : "word"
   }, {
     "name" : "bool"
   }, {
     "name" : "comment",
-    "value" : "API adds \"http://\" and returns 200"
+    "value" : "API completes it as \"http://word\""
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -151,6 +151,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5c31a9a3f69516b2.json",
-  "parameterValues" : [ "200", "false", "invalid", "fpt.aaa.bbb.ccc", null, "API adds \"http://\" and returns 200" ]
+  "source" : "3809dc1eed1cdf64.json",
+  "parameterValues" : [ "200", "false", "not_a_url", "word", null, "API completes it as \"http://word\"" ]
 }

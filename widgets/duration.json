@@ -1,190 +1,190 @@
 [ {
-  "uid" : "693184ae0c9a6363",
-  "name" : "GET all checklists on a card",
-  "time" : {
-    "start" : 1653422749289,
-    "stop" : 1653422749632,
-    "duration" : 343
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "835e20c878564997",
-  "name" : "POST a new checklist item to a checklist",
-  "time" : {
-    "start" : 1653422752220,
-    "stop" : 1653422752757,
-    "duration" : 537
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "803f3dad45974893",
-  "name" : "GET an attachment from a card",
-  "time" : {
-    "start" : 1653422743156,
-    "stop" : 1653422744794,
-    "duration" : 1638
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e4a62e953a49845d",
-  "name" : "GET all completed checklist items on a card",
-  "time" : {
-    "start" : 1653422751276,
-    "stop" : 1653422751712,
-    "duration" : 436
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9da49f7a3054c669",
-  "name" : "POST an attachment to a card from an url -- @1.2 ",
-  "time" : {
-    "start" : 1653422745291,
-    "stop" : 1653422745922,
-    "duration" : 631
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d0eadb90034c0105",
+  "uid" : "6cc2bae3278bb17e",
   "name" : "POST a new checklist to a card",
   "time" : {
-    "start" : 1653422749998,
-    "stop" : 1653422750358,
-    "duration" : 360
+    "start" : 1653660115213,
+    "stop" : 1653660115589,
+    "duration" : 376
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "97e056c36dc9d14",
-  "name" : "GET a checklist item by its id",
+  "uid" : "37172d01639966d6",
+  "name" : "POST an attachment to a card from an url -- @1.2 ",
   "time" : {
-    "start" : 1653422752758,
-    "stop" : 1653422753224,
-    "duration" : 466
+    "start" : 1653660109715,
+    "stop" : 1653660110512,
+    "duration" : 797
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e5ce17850ec610f3",
-  "name" : "POST an attachment to a card from an url -- @1.5 ",
-  "time" : {
-    "start" : 1653422746569,
-    "stop" : 1653422747829,
-    "duration" : 1260
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9e7c0ad8e54c9195",
-  "name" : "POST an attachment to a card from an url -- @1.3 ",
-  "time" : {
-    "start" : 1653422745923,
-    "stop" : 1653422746175,
-    "duration" : 252
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5c31a9a3f69516b2",
-  "name" : "POST an attachment to a card from an url -- @1.4 ",
-  "time" : {
-    "start" : 1653422746175,
-    "stop" : 1653422746568,
-    "duration" : 393
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "45aba00bee01a4eb",
-  "name" : "GET all checklist items on a checklist",
-  "time" : {
-    "start" : 1653422751713,
-    "stop" : 1653422752219,
-    "duration" : 506
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7dd8aceaf4902029",
-  "name" : "GET a checklist by id",
-  "time" : {
-    "start" : 1653422749632,
-    "stop" : 1653422749997,
-    "duration" : 365
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "77e72c795800c00c",
+  "uid" : "3809dc1eed1cdf64",
   "name" : "POST an attachment to a card from an url -- @1.1 ",
   "time" : {
-    "start" : 1653422744795,
-    "stop" : 1653422745290,
-    "duration" : 495
+    "start" : 1653660109252,
+    "stop" : 1653660109714,
+    "duration" : 462
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "32497112a8b9186b",
+  "uid" : "7c2abbbb82495ba0",
+  "name" : "GET a checklist item by its id",
+  "time" : {
+    "start" : 1653660118020,
+    "stop" : 1653660118748,
+    "duration" : 728
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d50d7446d1ab358d",
+  "name" : "GET all completed checklist items on a card",
+  "time" : {
+    "start" : 1653660116571,
+    "stop" : 1653660117051,
+    "duration" : 480
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71478183700fd941",
+  "name" : "GET a checklist by id",
+  "time" : {
+    "start" : 1653660114885,
+    "stop" : 1653660115212,
+    "duration" : 327
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17020c97a76bceea",
   "name" : "DELETE an attachment from a card",
   "time" : {
-    "start" : 1653422747830,
-    "stop" : 1653422749288,
-    "duration" : 1458
+    "start" : 1653660112833,
+    "stop" : 1653660114530,
+    "duration" : 1697
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bdef2ba48a2e81dc",
-  "name" : "Update a checklist",
-  "time" : {
-    "start" : 1653422750359,
-    "stop" : 1653422750792,
-    "duration" : 433
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c9486bde5ab3bb96",
-  "name" : "Update a checklist item",
-  "time" : {
-    "start" : 1653422753226,
-    "stop" : 1653422753832,
-    "duration" : 606
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2ddddcf17de99e3",
+  "uid" : "355a93569d400c72",
   "name" : "GET all attachments from a card",
   "time" : {
-    "start" : 1653422742027,
-    "stop" : 1653422743155,
-    "duration" : 1128
+    "start" : 1653660106637,
+    "stop" : 1653660107854,
+    "duration" : 1217
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c16fbcb184beaede",
-  "name" : "DELETE a checklist item",
+  "uid" : "133c1cefaaf7a9d5",
+  "name" : "Update a checklist",
   "time" : {
-    "start" : 1653422753833,
-    "stop" : 1653422754456,
-    "duration" : 623
+    "start" : 1653660115589,
+    "stop" : 1653660116075,
+    "duration" : 486
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ad05e25aa3b5c26b",
+  "uid" : "c51e76bf09433a3a",
+  "name" : "POST a new checklist item to a checklist",
+  "time" : {
+    "start" : 1653660117511,
+    "stop" : 1653660118019,
+    "duration" : 508
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1152bebb7595a1ff",
+  "name" : "Update a checklist item",
+  "time" : {
+    "start" : 1653660118748,
+    "stop" : 1653660119426,
+    "duration" : 678
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0d68d36ddb815a9",
+  "name" : "GET all checklists on a card",
+  "time" : {
+    "start" : 1653660114531,
+    "stop" : 1653660114884,
+    "duration" : 353
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d572b1f8c619f393",
   "name" : "DELETE a checklist",
   "time" : {
-    "start" : 1653422750792,
-    "stop" : 1653422751275,
-    "duration" : 483
+    "start" : 1653660116076,
+    "stop" : 1653660116570,
+    "duration" : 494
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7b029ccbc2d16d5",
+  "name" : "POST an attachment to a card from an url -- @1.3 ",
+  "time" : {
+    "start" : 1653660110513,
+    "stop" : 1653660110803,
+    "duration" : 290
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78730c00c8988dcd",
+  "name" : "GET an attachment from a card",
+  "time" : {
+    "start" : 1653660107855,
+    "stop" : 1653660109251,
+    "duration" : 1396
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6dc25180b64e3641",
+  "name" : "POST an attachment to a card from an url -- @1.5 ",
+  "time" : {
+    "start" : 1653660111302,
+    "stop" : 1653660112832,
+    "duration" : 1530
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "552890ce6249aba5",
+  "name" : "POST an attachment to a card from an url -- @1.4 ",
+  "time" : {
+    "start" : 1653660110804,
+    "stop" : 1653660111301,
+    "duration" : 497
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebaf30fb02f93ed2",
+  "name" : "DELETE a checklist item",
+  "time" : {
+    "start" : 1653660119427,
+    "stop" : 1653660120104,
+    "duration" : 677
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89c9b915b2bf417",
+  "name" : "GET all checklist items on a checklist",
+  "time" : {
+    "start" : 1653660117052,
+    "stop" : 1653660117510,
+    "duration" : 458
   },
   "status" : "passed",
   "severity" : "normal"
